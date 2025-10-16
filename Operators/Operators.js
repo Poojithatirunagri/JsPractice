@@ -62,32 +62,23 @@ console.log(x < 3);
 console.log(x>=5);
 console.log(x<=6);
 
-// 4. logical operators: used to combine multiple condition
-//&& : it will returns true if both conditions gets true, if any condition gets false it will returns the false
-// || : it will returns the true if any one condition gets true, if both conditions gets fals ethen it will returnds the false
-// ! : it will returns true as false and false as a true
-
-console.log(10>15 && 30<=12);//(false && false)---> flase
-console.log(10>5 && 10<5);//(true && false)--->flase
+// 4. logical operators: &&,||,!
+// & operator:return true only if both are true
+console.log(10>15 && 30<=12);
+console.log(10>5 && 10<5);
 console.log(10>5 && 20<30);//true
 
-
+// || operator:return true if any condition becomes true
 console.log(10>15 || 30<=12);//false
-console.log(10>5 || 10<5);//true
-console.log(10>5 || 20<30);//true
 
+// ! operator:it will returns true as false and false as a true)
 console.log(!(10>15 || 30<=12));//true
-console.log(!(10>5 || 10<5));//false
-console.log(!(10>5 || 20<30));//false
-
 
 console.log(true && false || true && !false);//(false || true && !false)---->(true && !flase)--->(true && true)--->true
 
 
-//5. ternary operator:
-// it is a short hand form of a if-else
+//5. ternary operator:(condition ? expressionIfTrue : expressionIfFalse)
 
-//condition ? expressionIfTrue : expressionIfFalse
 
 let marks = 75;
 
@@ -95,38 +86,42 @@ let result = (marks >=35) ? "Pass" : "Fail";
 console.log(result);//pass
 
 
-let a1 = 20;
-let b1 = 5;
-let result1 = a1>b1 ? a1<15 ? "Between 5-15" : "Above 15" : "Below 15";
+let b1 = 20;
+let c1 = 5;
+let result1 = b1>c1 ? b1<15 ? "Between 5-15" : "Above 15" : "Below 15";
 console.log(result1);//between 5-15
 
 //unary Operator:
 //+,-,++,--,typeof
-//+--->converts to number
+//+ --->converts to number
 //- --->nagtes the number
+
+console.log("5");
+console.log(+"5");//converts it into number
+console.log(true);//1
+console.log(-true);//converts it into number (-1)
+
 //++ (incremnet)--->two types
     //post Increament(value++)--->it will prints the value then late it increases the value
     //pre increment(++value)--->first it will increment the value late it will prints the value
+
+let a1=10;
+
+console.log(a1++);//10----a1-->11
+console.log(a1);//11
+console.log(++a1);//11
+console.log(a1++);//12---->13
+console.log(++a1);//14
+
 //--(decreament)--->two types 
     //post decrement---->it will prints the value then late it decreases the value
     //pre decrement--->first it will decrreases  the value late it will prints the value\
 
-console.log("5");
-console.log(+"5");
-console.log(true);
-console.log(-true)
+a1=14
 
-console.log(a1++);//20----a1-->21
-console.log(a1);//21
-console.log(++a1);//22
-console.log(a1++);//22---->23
-console.log(++a1);//24
-
-a1=24
-
-console.log(--a1);//23
-console.log(a1);//23
-console.log(a1--);//23
-console.log(a1);//22
-console.log(a1++);//22--->23
-console.log(--a1);//22
+console.log(--a1);//13
+console.log(a1);//13
+console.log(a1--);//13
+console.log(a1);//12
+console.log(a1++);//12--->13
+console.log(--a1);//12
