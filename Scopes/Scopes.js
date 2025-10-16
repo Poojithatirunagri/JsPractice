@@ -3,10 +3,9 @@ let b = 20;
 const c = 30;
 console.log(a,b,c);
 function test(){
-   
-    console.log(a);
-    console.log(b);
-    console.log(c);
+    // console.log(a);//undefined
+    // console.log(b);//can't access before inialization
+    // console.log(c);//can't access before inialization
     var a = 100;
     let b = 200;
     const c = 300;
@@ -26,10 +25,12 @@ greet(); // Output: Hello, John
 console.log(name);
 
 
+// Functional Scope
+
 function student(){
-    const studentName = "Alice"; // Local scope
+    const studentName = "Poojitha"; 
     console.log("Student Name: " + studentName); // Accessing local variable
-    var age = 20;   
+    var age = 21;   
     console.log("Student Age: " + age);
     let course = "Math";
     console.log("Student Course: " + course);
@@ -37,9 +38,10 @@ function student(){
 
 student();
 
+// Block Scope
 
 {
-    let city = "New York"; // Block scope
+    let city = "New York"; 
     console.log("City: " + city); // Accessing block-scoped variable
     const country = "USA";
     console.log("Country: " + country);
@@ -48,11 +50,6 @@ student();
 }
 console.log(pin);
 
-
-
-
-
-
 function outerFunction() {
     let x = 15;
     {
@@ -60,16 +57,12 @@ function outerFunction() {
         console.log(x);
     }
     console.log(x);
-    // let x = 5;
-    // console.log(x);
 }outerFunction();
-// console.log(x); // Error: x is not defined
 
 
-
-var title = "JavaScript";
+var title = "Java";
 function displayTitle() {
-    let title = "Learn JavaScript";
+    let title = "JavaScript";
     console.log(title);
     {
         let title = "JavaScript Basics";
@@ -83,18 +76,16 @@ function displayTitle() {
 displayTitle();
 console.log(title);
     
-
 var company = "AIT";
 let department = "Development";
 console.log(company,department);
 
 function mainOffice(){
-    
     var company = "Google";
     let department = "HR";
     console.log(company,department);
     {
-        var manager = "John";
+        var manager = "Pooja";
         let floor = "5th floor";
         const team = "A-Team";
         console.log(company,department,manager,floor,team);
