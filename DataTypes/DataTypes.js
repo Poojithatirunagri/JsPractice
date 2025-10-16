@@ -1,16 +1,16 @@
-let number = 42; // Number
+let number = 2; // Number
 console.log(number);
-number = 50;
+number = 10;
 console.log(number);
 console.log(typeof number);
 
-let name = "Alice"; // String
+let name = "Pooji"; // String
 console.log(name);
 console.log(typeof name);
 
-let isStudent = true; // Boolean
-console.log(isStudent);
-console.log(typeof isStudent);
+let isEmployed = true; // Boolean
+console.log(isEmployed);
+console.log(typeof isEmployed);
 
 let emptyValue = null; // Null
 console.log(emptyValue);
@@ -18,22 +18,22 @@ console.log(typeof emptyValue); // Note: typeof null returns "object" due to a h
 
 let notAssigned; // Undefined
 console.log(notAssigned);
-console.log(typeof notAssigned);
+console.log(typeof notAssigned);// undefined
 
-let bigNumber = 9007199254741991n; // BigInt\
+let bigNumber = 9007199254741991n; // BigInt
 console.log(bigNumber);
 console.log(typeof bigNumber);  
 
-let person = { // Object
+let person = { 
     name: "Bob",
     age: 25,
     isEmployed: false
 };
 
 console.log(person);
-console.log(typeof person);
+console.log(typeof person);// object
 
-// singlr value access from object
+// single value access from object
 console.log(person.name);
 console.log(person.age);
 console.log(person['isEmployed']);
